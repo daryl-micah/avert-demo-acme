@@ -4,7 +4,7 @@ from openai import OpenAI
 openai_client = OpenAI()
 claude = anthropic.Anthropic()
 
-PRIMARY_MODEL = "gpt-4o-2024-08-06"
+PRIMARY_MODEL = "gpt-6-luna"
 
 
 def answer(prompt: str) -> str:
