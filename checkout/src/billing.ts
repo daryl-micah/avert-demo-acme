@@ -10,7 +10,7 @@ export async function chargeCustomer(cart: Cart) {
     amount: cart.amountCents,
     currency: 'usd',
     customer: cart.customerId,
-    payment_method_types: ['card'],
+    allowed_payment_method_types: ['card'],
     confirm: true,
   });
 }
