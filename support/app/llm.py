@@ -17,7 +17,7 @@ def answer(prompt: str) -> str:
     except Exception:
         # Fallback provider. Rolling alias: whatever "latest" points at today.
         msg = claude.messages.create(
-            model="claude-3-5-sonnet-latest",
+            model="claude-sonnet-5-5",
             max_tokens=512,
             messages=[{"role": "user", "content": prompt}],
         )
